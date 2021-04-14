@@ -3,8 +3,8 @@ A Python program that shows how a hitter compares to the mean of a sample of MLB
 
 ## About
 This is a program that will show an MLB hitters Z-Score for the following statistics:
-- wobacon
-- xwobacon
+- wOBACON
+- xwOBACON
 - OPS
 - Hard Hit %
 - Barrel%
@@ -21,9 +21,10 @@ As of the initial commit, to run the program, the step are:
 2. Make sure you have the following columns (OPS, wOBACON, xwObACON, Avg EV (MPH), Barrel%, Hard Hit %) and make sure Minimum PA is set to 'Q' for all qualified hitters
 3. Click the 'Update' button
 4. Download the csv and put it in the same directory as this program
-5. Change the file name varaible on line 40 to the name of your file
+5. Change the file name varaible on line 40 to the name of your file (NOTE - There is a CSV in this repo that is an example of one. Refer to that to see what it should look like. You can also use that as a test file)
 6. Change the name of the player you want to visualize on line 42
 7. Run and see the plot!
+
 
 ## Extra
 Something to be aware of is that these Z-Score numbers don't mean a ton until about the All-Star break. The reason being we need a longer sample period to get an idea of what the league averages look like for ever stat, and also it's always a good idea to use a larger sample when evaluating a single player. That all being said, this program is still fun to use and it is neat to see how players stack up against eachother in terms of these vvisualizations.
