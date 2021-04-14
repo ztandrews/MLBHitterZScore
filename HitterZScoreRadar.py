@@ -24,8 +24,8 @@ STEPS TO RUN
     Make sure Qualified hitters is selected and press 'Download CSV'
 
 2. Once the file is downlaoded, put it in the same directory as this code
-3. Change the file name variable on line 40 to match the name of your csv. Make sure to include .csv extension
-4. Change the name of the player on line 73
+3. Change the file name variable on line 40 (rigth after import modules) to match the name of your csv. Make sure to include .csv extension
+4. Change the name of the player on line 42 (also right after import modules)
 5. Run the code!
 """
 
@@ -38,6 +38,8 @@ from math import pi
 
 #Enter the name of the file you downloaded from Baseball Savant
 fileName = 'radarstats2.csv'
+#Change this to get the player's data that we want to chart
+playerToChart = 'Aaron Judge'
 
 #Read CSV file
 data = pd.read_csv (r'C:/Users/ztand/Desktop/Python/'+fileName)
@@ -52,7 +54,6 @@ opsmean = data['on_base_plus_slg'].mean()
 hhpmean = data['hard_hit_percent'].mean()
 
 #Get the standard deviation of each column
-
 wobaconsd = data['wobacon'].std()
 evasd = data['exit_velocity_avg'].std()
 bbrsd = data['barrel_batted_rate'].std()
@@ -69,8 +70,7 @@ data['xwobacon_zscore'] = (data['xwobacon'] - xwobaconmean) /xwobaconsd
 data['ops_zscore'] = (data['on_base_plus_slg'] - opsmean) /opssd
 data['hhp_zscore'] = (data['hard_hit_percent'] - hhpmean) /hhpsd
 
-#Change this to get the player's data that we want to chart
-playerToChart = 'Aaron Judge'
+
 
 #Get the Z-Scores and other stats from the DataFrame
 player = data[data['name'].str.contains(playerToChart)]
