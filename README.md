@@ -24,3 +24,17 @@ As of the initial commit, to run the program, the step are:
 5. Change the file name varaible on line 40 to the name of your file
 6. Change the name of the player you want to visualize on line 42
 7. Run and see the plot!
+
+## Extra
+Something to be aware of is that these Z-Score numbers don't mean a ton until about the All-Star break. The reason being we need a longer sample period to get an idea of what the league averages look like for ever stat, and also it's always a good idea to use a larger sample when evaluating a single player. That all being said, this program is still fun to use and it is neat to see how players stack up against eachother in terms of these vvisualizations.
+
+## Examples
+I am going to run two samples, one of a good player and one of a not so good one. I will also walk through how to run it so it is clear.
+### Sample 1 - Mike Trout
+![image](https://user-images.githubusercontent.com/68918006/114778259-9ea5cb00-9d42-11eb-8bbe-94e842e9f82b.png)
+### Sample 2 - Nick Madrigal
+![image](https://user-images.githubusercontent.com/68918006/114778367-c1d07a80-9d42-11eb-8f05-75da01d90b26.png)
+
+If we take a look at the first of two samples, we can see that Mike Trout is off to an extremly hot start. He is at least over 2 standard deviations better than the mean in 5/6 stats that we are visualizing. This means that he is performing well above the league average in every statistic.
+If we look at Madrigal though, we see that he iis off to a very slow start. He is in the bottom 1% of the league in terms of his Hard Hit%, and his other stats are not much better.
+As you can see from these samples, Mike Trout's shaded area is far bigger than Nick Madrigals, and he is off to a better start, so the visuilization checks out.
