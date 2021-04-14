@@ -29,7 +29,7 @@ As of the initial commit, to run the program, the step are:
 Something to be aware of is that these Z-Score numbers don't mean a ton until about the All-Star break. The reason being we need a longer sample period to get an idea of what the league averages look like for ever stat, and also it's always a good idea to use a larger sample when evaluating a single player. That all being said, this program is still fun to use and it is neat to see how players stack up against eachother in terms of these vvisualizations.
 
 ## Examples
-I am going to run two samples, one of a good player and one of a not so good one. I will also walk through how to run it so it is clear.
+I am going to run two samples, one of a player with great stats and one of a player with bad stats.
 ### Sample 1 - Mike Trout
 ![image](https://user-images.githubusercontent.com/68918006/114778259-9ea5cb00-9d42-11eb-8bbe-94e842e9f82b.png)
 ### Sample 2 - Nick Madrigal
