@@ -22,5 +22,5 @@ As of the initial commit, to run the program, the step are:
 3. Click the 'Update' button
 4. Download the csv and put it in the same directory as this program
 5. Change the file name varaible on line 40 to the name of your file
-6. Change the name of the player you want to visualize on ~ line 73
+6. Change the name of the player you want to visualize on line 42
 7. Run and see the plot!
