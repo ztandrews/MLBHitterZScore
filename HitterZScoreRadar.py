@@ -30,7 +30,6 @@ STEPS TO RUN
 """
 
 #Import modules
-import sys
 import pandas as pd
 import matplotlib.pyplot as plt
 from math import pi
@@ -88,7 +87,9 @@ zum = str(player['zsc_sum'])
 
 stats = ['OPS', 'wOBA', 'xwOBA', 'AVG. EV', 'BARREL %','HARD HIT %']
 values = [ops,woba,xwoba,eva,bbr,hhp]
-
+font = {'family' : 'normal',
+        'weight' : 'normal',
+        'size'   : 30}
 #Style and plot the Polar Chart
 zscoresum = (ops+woba+xwoba+eva+bbr+hhp)
 #The color of the chart logic. If the players sum of Z-Scores is more than the mean of the sum of every players Z-Scores, the chart will be blue. If it is less, the chart will be red
@@ -106,7 +107,7 @@ plt.polar(angles, values,col,marker='.')
 plt.fill(angles,values,col,alpha=.3)
 plt.xticks(angles[:-1], stats)
 ax.set_rlabel_position(30)
-plt.yticks([-3,-2,-1,0,1,2,3], color='grey',size=20)
+plt.yticks([-3,-2,-1,0,1,2,3], color='grey',size=25)
 plt.ylim(-3,3)
 yearList = year.split(' ')
 yearList2 = yearList[4].split('\n')
@@ -114,5 +115,6 @@ year = yearList2[0]
 paList = pa.split(' ')
 paList2 = paList[4].split('\n')
 pa = paList2[0]
-plt.title(playerToChart + '\n' + year + '\n' + pa + ' Plate Appearences')
+plt.title(playerToChart + '\n' + year + '\n' + pa + ' Plate Appearences' + '\nY-Ticks are Z-Score',fontdict=font)
+plt.xticks(fontsize='20',fontweight='bold')
 plt.show()
