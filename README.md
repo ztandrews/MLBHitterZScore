@@ -20,7 +20,7 @@ As of the initial commit, to run the program, the step are:
 1. Go to [this link](https://baseballsavant.mlb.com/leaderboard/custom?year=2021&type=batter&filter=&sort=5&sortDir=asc&min=q&selections=b_total_pa,on_base_plus_slg,woba,xwoba,exit_velocity_avg,barrel_batted_rate,hard_hit_percent,&chart=false&x=b_total_pa&y=b_total_pa&r=no&chartType=beeswarm)
 2. Make sure you have the following columns (OPS, wOBA, xwOBA, Avg EV (MPH), Barrel%, Hard Hit %) and make sure Minimum PA is set to 'Q' for all qualified hitters
 3. Click the 'Update' button
-4. Download the csv and put it in the same directory as this program (NOTE - There is a CSV in this repo that is an example of one. Refer to that to see what it should look like. You can also use that as a test file)
+4. Download the csv and put it in the same directory as this program (NOTE - There is a CSV in this repo named <em>radarstats4.csv</em> that is an example of one. Refer to that to see what it should look like. You can also use that as a test file)
 5. Change the file name varaible on line 40 to the name of your file 
 6. Change the name of the player you want to visualize on line 42
 7. Run and see the plot!
