@@ -42,5 +42,5 @@ As you can see from these samples, Mike Trout's shaded area is far bigger than N
 
 ## Version Updates
 #### Current Version: 1.0.3
-- Updated stats to be wOBA and xwOBA instead of wOBACON and xwOBACON. Gives a better idea of how a hitter is performing.
+- Updated stats to be wOBA and xwOBA instead of wOBACON and xwOBACON. Gives a better idea of how a hitter is performing since it also includes walks, hbp, etc. (Other ways to reach base besides getting hits).
 - Added logic to color the charts based on how well the player compares to others. If the sum of all of a players Z-Scores is greater than the mean of the sum of all Z-Scores, the chart will be blue. Otherwise, the chart will be red.
