@@ -39,3 +39,8 @@ I am going to run two samples, one of a player with great stats and one of a pla
 If we take a look at the first of two samples, we can see that Mike Trout is off to an extremly hot start. He is at least over 2 standard deviations better than the mean in 5/6 stats that we are visualizing. This means that he is performing well above the league average in every statistic.
 If we look at Madrigal though, we see that he iis off to a very slow start. He is in the bottom 1% of the league in terms of his Hard Hit%, and his other stats are not much better.
 As you can see from these samples, Mike Trout's shaded area is far bigger than Nick Madrigals, and he is off to a better start, so the visuilization checks out.
+
+## Version Updates
+#### Current Version: 1.0.3
+- Updated stats to be wOBA and xwOBA instead of wOBACON and xwOBACON. Gives a better idea of how a hitter is performing.
+- Added logic to color the charts based on how well the player compares to others. If the sum of all of a players Z-Scores is greater than the mean of the sum of all Z-Scores, the chart will be blue. Otherwise, the chart will be red.
