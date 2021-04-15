@@ -3,12 +3,12 @@ A Python program that shows how a hitter compares to the mean of a sample of MLB
 
 ## About
 This is a program that will show an MLB hitters Z-Score for the following statistics:
-- wOBA
-- xwOBA
-- OPS
-- Hard Hit %
-- Barrel %
-- Average Exit Velo
+- [wOBA](https://www.mlb.com/glossary/advanced-stats/weighted-on-base-average)
+- [xwOBA](https://www.mlb.com/glossary/statcast/expected-woba)
+- [OPS](https://www.mlb.com/glossary/standard-stats/on-base-plus-slugging)
+- [Hard Hit %](https://www.mlb.com/glossary/statcast/hard-hit-rate)
+- [Barrel %](https://www.mlb.com/glossary/statcast/hard-hit-rate)
+- [Average Exit Velo](https://www.mlb.com/glossary/statcast/exit-velocity)
 
 The reason I sued these statistics is because I believe these are extremly useful for evaluating a hitter. I will like a glossary to each so you can read more about what each statistic actually means and why it is useful for player evaluation.
 
