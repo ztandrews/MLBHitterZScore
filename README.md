@@ -17,7 +17,7 @@ For each one of these statistics, I computed the mean and standard deviation of 
 ## How to Run
 Note - It is reccomended to use the [Spyder IDE](https://www.spyder-ide.org/) to run this as it is great for Data Visualization and Python.
 
-As of the initial commit, to run the program, the step are:
+The steps to run the program are:
 1. Go to [this link](https://baseballsavant.mlb.com/leaderboard/custom?year=2021&type=batter&filter=&sort=5&sortDir=asc&min=q&selections=b_total_pa,on_base_plus_slg,woba,xwoba,exit_velocity_avg,barrel_batted_rate,hard_hit_percent,&chart=false&x=b_total_pa&y=b_total_pa&r=no&chartType=beeswarm)
 2. Make sure you have the following columns (OPS, wOBA, xwOBA, Avg EV (MPH), Barrel%, Hard Hit %) and make sure Minimum PA is set to 'Q' for all qualified hitters
 3. Click the 'Update' button
