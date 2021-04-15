@@ -15,7 +15,7 @@ The reason I sued these statistics is because I believe these are extremly usefu
 For each one of these statistics, I computed the mean and standard deviation of the sample that is being worked with (Qualified MLB Hitters, meaning they have a certain amount of plate appearences depending on how many games have been played). I then calculate the Z-Score so we can see how they compare to the mean. The Z-Scores are then plotted in a Radar Chart (also called Polar Chart) so we can visualize our Z-Scores. The general rule of thumb is that if the shaded area is larger, the player is better.
 
 ## How to Run
-Note - It is reccomended to use Anaconda Spyder to run this as it is great for Data Vis and Python
+Note - It is reccomended to use the [Spyder IDE](https://www.spyder-ide.org/the ) to run this as it is great for Data Vis and Python
 As of the initial commit, to run the program, the step are:
 1. Go to [this link](https://baseballsavant.mlb.com/leaderboard/custom?year=2021&type=batter&filter=&sort=5&sortDir=asc&min=q&selections=b_total_pa,on_base_plus_slg,woba,xwoba,exit_velocity_avg,barrel_batted_rate,hard_hit_percent,&chart=false&x=b_total_pa&y=b_total_pa&r=no&chartType=beeswarm)
 2. Make sure you have the following columns (OPS, wOBA, xwOBA, Avg EV (MPH), Barrel%, Hard Hit %) and make sure Minimum PA is set to 'Q' for all qualified hitters
