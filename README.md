@@ -19,7 +19,7 @@ Note - It is reccomended to use the [Spyder IDE](https://www.spyder-ide.org/) to
 
 The steps to run the program are:
 1. Go to [this link](https://baseballsavant.mlb.com/leaderboard/custom?year=2021&type=batter&filter=&sort=5&sortDir=asc&min=q&selections=b_total_pa,on_base_plus_slg,woba,xwoba,exit_velocity_avg,barrel_batted_rate,hard_hit_percent,&chart=false&x=b_total_pa&y=b_total_pa&r=no&chartType=beeswarm)
-2. Make sure you have the following columns (OPS, wOBA, xwOBA, Avg EV (MPH), Barrel%, Hard Hit %) and make sure Minimum PA is set to 'Q' for all qualified hitters
+2. Make sure you have the following columns selected (OPS, wOBA, xwOBA, Avg EV (MPH), Barrel%, Hard Hit %) and make sure Minimum PA is set to 'Q' for all qualified hitters
 3. Click the 'Update' button
 4. Download the csv and put it in the same directory as this program (NOTE - There is a CSV in this repo named <em>radarstats4.csv</em> that is an example of one. Refer to that to see what it should look like. You can also use that as a test file)
 5. Change the file name varaible on line 40 to the name of your file 
@@ -28,7 +28,7 @@ The steps to run the program are:
 
 
 ## Extra
-Something to be aware of is that these Z-Score numbers don't mean a ton until about the All-Star break. The reason being we need a longer sample period to get an idea of what the league averages look like for ever stat, and also it's always a good idea to use a larger sample when evaluating a single player. That all being said, this program is still fun to use and it is neat to see how players stack up against eachother in terms of these vvisualizations.
+Something to be aware of is that these Z-Score numbers don't mean a ton until about the All-Star break. The reason being we need a longer sample period to get an idea of what the league averages look like for every stat, and also it's always a good idea to use a larger sample size when evaluating a single player. That all being said, this program is still fun to use and it is neat to see how players stack up against eachother in terms of these vvisualizations.
 
 ## Examples
 I am going to run two samples, one of a player with great stats and one of a player with bad stats.
