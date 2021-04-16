@@ -33,12 +33,12 @@ Something to be aware of is that these Z-Score numbers don't mean a ton until ab
 ## Examples
 I am going to run two samples, one of a player with great stats and one of a player with bad stats.
 ### Sample 1 - Mike Trout
-![image](https://user-images.githubusercontent.com/68918006/114806094-2951ee80-9d72-11eb-88d6-75a7965fe703.png)
+![image](https://user-images.githubusercontent.com/68918006/114966410-7d2b0900-9e40-11eb-84df-f44418d7dffd.png)
 ### Sample 2 - Nick Madrigal
-![image](https://user-images.githubusercontent.com/68918006/114806148-3ec71880-9d72-11eb-8256-90dba39228ba.png)
+![image](https://user-images.githubusercontent.com/68918006/114966460-97fd7d80-9e40-11eb-9ba2-f2c366ebe1d6.png)
 
 If we take a look at the first of two samples, we can see that Mike Trout is off to an extremly hot start. He is at least over 2 standard deviations better than the mean in 5/6 stats that we are visualizing. This means that he is performing well above the league average in every statistic.
-If we look at Madrigal though, we see that he iis off to a very slow start. He is in the bottom 1% of the league in terms of his Hard Hit%, and his other stats are not much better.
+If we look at Madrigal though, we see that he is off to a very slow start. He is in the bottom 1% of the league in terms of his Hard Hit %, and his other stats are not much better.
 As you can see from these samples, Mike Trout's shaded area is far bigger than Nick Madrigals, and he is off to a better start, so the visuilization checks out.
 
 ## Version Updates
