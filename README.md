@@ -42,6 +42,17 @@ If we look at Madrigal though, we see that he is off to a very slow start. He is
 As you can see from these samples, Mike Trout's shaded area is far bigger than Nick Madrigals, and he is off to a better start, so the visuilization checks out.
 
 ## Version Updates
-#### Current Version: 1.0.3
+### Current Version: 1.0.3.1
+- Minor chart styling to make fonts bigger and easier to read.
+- Added a key so users know what the Y-Ticks are.
+### Previous Version Updates
+#### 1.0.3
 - Updated stats to be wOBA and xwOBA instead of wOBACON and xwOBACON. Gives a better idea of how a hitter is performing since it also includes walks, hbp, etc. (Other ways to reach base besides getting hits).
 - Added logic to color the charts based on how well the player compares to others. If the sum of all of a players Z-Scores is greater than the mean of the sum of all Z-Scores, the chart will be blue. Otherwise, the chart will be red.
+### 1.0.2
+- Adjusted the shape of the Radar Cart so the axis look better.
+### 1.0.1
+- Minor styling updates including choosing better shades of blue and red.
+- Minor quality of life code changes. Made it easier to find the variables to change the name of the csv file you want to use and the players name you want to chart.
+### 1.0
+- Initial commit.
