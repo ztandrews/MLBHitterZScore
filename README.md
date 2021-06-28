@@ -1,5 +1,6 @@
 # MLBHitterZScore
 A Python program that shows how a hitter compares to the mean of a sample of MLB hitters in certain statistics using a Polar Chart
+(Also see [this program for MLB Pitchers](https://github.com/ztandrews/MLBPitcherZScore))
 
 ## About
 This is a program that will show an MLB hitters Z-Score for the following statistics:
