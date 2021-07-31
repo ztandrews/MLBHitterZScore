@@ -41,7 +41,7 @@ fileName = 'SampleData.csv'
 playerToChart = 'Shohei Ohtani'
 
 #Read CSV file
-data = pd.read_csv (r'C:/Users/ztand/Desktop/Python/'+fileName)
+data = pd.read_csv (r'C:/Users/ztand/Desktop/Projects/MLBHitterZScore/'+fileName)
 data['name'] = data[' first_name'] + ' ' + data['last_name']
 
 #Get the means of each column
