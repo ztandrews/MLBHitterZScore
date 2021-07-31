@@ -33,41 +33,35 @@ STEPS TO RUN
 import pandas as pd
 import matplotlib.pyplot as plt
 from math import pi
+import os
 
 
-#Enter the name of the file you downloaded from Baseball Savant
+######## Configure #######
+#Change filename to the name of the csv downloaded from baseball savant
 fileName = 'SampleData.csv'
+cwd = os.getcwd()
+data = pd.read_csv (cwd+'/'+fileName)
 #Change this to get the player's data that we want to chart
-playerToChart = 'Shohei Ohtani'
+playerToChart = 'Aaron Judge'
 
-#Read CSV file
-data = pd.read_csv (r'C:/Users/ztand/Desktop/Projects/MLBHitterZScore/'+fileName)
+ 
+#Create data frame
 data['name'] = data[' first_name'] + ' ' + data['last_name']
 
-#Get the means of each column
-wobamean = data['woba'].mean()
-evamean = data['exit_velocity_avg'].mean()
-bbrmean = data['barrel_batted_rate'].mean()
-xwobamean = data['xwoba'].mean()
-opsmean = data['on_base_plus_slg'].mean()
-hhpmean = data['hard_hit_percent'].mean()
 
-#Get the standard deviation of each column
-wobasd = data['woba'].std()
-evasd = data['exit_velocity_avg'].std()
-bbrsd = data['barrel_batted_rate'].std()
-xwobasd = data['xwoba'].std()
-opssd = data['on_base_plus_slg'].std()
-hhpsd = data['hard_hit_percent'].std()
+#Get the mean and standard deviaton of each column and put them into a data frame
+meanframe = data.mean(axis=0)
+stdframe = data.std(axis=0)
+
 
 #Create z-score columns for each player and each stat
 #Z-Score = (observed value - mean of the sample) / standard deviation of the sample
-data['woba_zscore'] = (data['woba'] - wobamean) /wobasd
-data['eva_zscore'] = (data['exit_velocity_avg'] - evamean)/evasd
-data['bbr_zscore'] = (data['barrel_batted_rate']- bbrmean)/bbrsd
-data['xwoba_zscore'] = (data['xwoba'] - xwobamean) /xwobasd
-data['ops_zscore'] = (data['on_base_plus_slg'] - opsmean) /opssd
-data['hhp_zscore'] = (data['hard_hit_percent'] - hhpmean) /hhpsd
+data['woba_zscore'] = (data['woba'] - meanframe.woba) /stdframe.woba
+data['eva_zscore'] = (data['exit_velocity_avg'] - meanframe.exit_velocity_avg)/stdframe.exit_velocity_avg
+data['bbr_zscore'] = (data['barrel_batted_rate']- meanframe.barrel_batted_rate)/stdframe.barrel_batted_rate
+data['xwoba_zscore'] = (data['xwoba'] - meanframe.xwoba) /stdframe.xwoba
+data['ops_zscore'] = (data['on_base_plus_slg'] - meanframe.on_base_plus_slg) /stdframe.on_base_plus_slg
+data['hhp_zscore'] = (data['hard_hit_percent'] - meanframe.hard_hit_percent) /stdframe.hard_hit_percent
 
 #Create a column for each player that is a sum of their Z-Scores. This will determine the color of their chart
 data['zsc_sum'] = (data['hhp_zscore']+data['ops_zscore']+data['xwoba_zscore']+data['bbr_zscore']+data['eva_zscore']+data['woba_zscore'] )
