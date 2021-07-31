@@ -36,7 +36,7 @@ from math import pi
 
 
 #Enter the name of the file you downloaded from Baseball Savant
-fileName = '73021.csv'
+fileName = 'SampleData.csv'
 #Change this to get the player's data that we want to chart
 playerToChart = 'Shohei Ohtani'
 
