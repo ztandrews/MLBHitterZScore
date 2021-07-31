@@ -36,9 +36,9 @@ from math import pi
 
 
 #Enter the name of the file you downloaded from Baseball Savant
-fileName = 'radarstats4.csv'
+fileName = '73021.csv'
 #Change this to get the player's data that we want to chart
-playerToChart = 'Mike Trout'
+playerToChart = 'Shohei Ohtani'
 
 #Read CSV file
 data = pd.read_csv (r'C:/Users/ztand/Desktop/Python/'+fileName)
