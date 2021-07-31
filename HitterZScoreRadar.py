@@ -44,10 +44,8 @@ data = pd.read_csv (cwd+'/'+fileName)
 #Change this to get the player's data that we want to chart
 playerToChart = 'Aaron Judge'
 
- 
-#Create data frame
+#Create a name column
 data['name'] = data[' first_name'] + ' ' + data['last_name']
-
 
 #Get the mean and standard deviaton of each column and put them into a data frame
 meanframe = data.mean(axis=0)
