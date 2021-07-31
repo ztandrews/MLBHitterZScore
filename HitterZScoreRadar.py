@@ -3,7 +3,7 @@
 @auth: ztandrews
 
 Create a Radar chart that plots an MLLB hitters Z-Scores for certain statistics.
-The visualization will give us a good idea of how the hitter comaprees to the average MLB hitter.
+The visualization will give us a good idea of how the hitter comapres to the average MLB hitter.
 
 The stats we will be using are:
     - wOBA
